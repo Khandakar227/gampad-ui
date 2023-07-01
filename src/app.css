@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html, body {
+        @apply min-h-screen w-full bg-[#515151] text-white;
+    }
+}
+@layer components {
+    .gamepad-btn {
+        @apply transition-all outline-none active:stroke-slate-400;
+    }
+    .disable-zoom {
+        touch-action: pan-x pan-y;
+      }
+    }
